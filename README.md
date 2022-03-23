@@ -29,14 +29,22 @@
 
 ```
 /**
+ * struct binary_tree_s - Binary tree node
  *
-  *
-     *
-        *
-	   *
-	      *
-	         */
+ * @n: Integer stored in the node
+ * @parent: Pointer to the parent node
+ * @left: Pointer to the left child node
+ * @right: Pointer to the right child node
+ */
+struct binary_tree_s
+{
+    int n;
+    struct binary_tree_s *parent;
+    struct binary_tree_s *left;
+    struct binary_tree_s *right;
+};
 
+typedef struct binary_tree_s binary_tree_t;
 ```
 
 ## Files included
@@ -51,6 +59,6 @@
 
 ### Author
 ***
-*Holberton School Student*
+* Holberton School Student
 
 Juan Sebastian Posada  - [Github](https://github.com/Juansepo13) - [Twiter](https://twitter.com/@JuanSeb35904130)# binary_trees
