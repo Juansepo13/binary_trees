@@ -19,7 +19,7 @@ int main(void)
     binary_tree_insert_right(root, 128);
     binary_tree_print(root);
 
-    leaves = binary_tree_leaves(root);
+    leaves = binary_tree_nodes(root);
     printf("Leaves in %d: %lu\n", root->n, leaves);
     leaves = binary_tree_leaves(root->right);
     printf("Leaves in %d: %lu\n", root->right->n, leaves);
